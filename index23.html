@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>刷新复习五十音图byJoe首页 | Reload page to review Gojūon by Joe</title>
+<style type="text/css">
+body { font: 14px/1.3 verdana, arial, helvetica, sans-serif; }
+h1 { font-size:1.3em; }
+h2 { font-size:1.2em; }
+a:link { color:#33c; }
+a:visited { color:#339; }
+p { max-width: 60em; }
+
+/* so linked image won't have border */
+a img { border:none; }
+</style><center>
+<script type="text/javascript">
+// place your images in this array
+var random_images_array = ['kya.png', 'kyu.png', 'kyo.png', 'sha.png', 'shu.png', 'sho.png', 'cha.png', 'chu.png', 'cho.png', 'nya.png', 'nyu.png', 'nyo.png', 'hya.png', 'hyu.png', 'hyo.png', 'mya.png', 'myu.png', 'myo.png', 'rya.png', 'ryu.png', 'ryo.png', 'gya.png', 'gyu.png', 'gyo.png', 'ja.png', 'ju.png', 'jo.png', 'bya.png', 'byu.png', 'byo.png', 'pya.png', 'pyu.png', 'pyo.png'];
+
+function getRandomImage(imgAr, path) {
+    path = path || 'images2/'; // default path here
+    var num = Math.floor( Math.random() * imgAr.length );
+    var img = imgAr[ num ];
+    var imgStr = '<img src="' + path + img + '" alt = "">';
+    document.write(imgStr); document.close();
+}
+
+</script>
+</head>
+<body>
+<div>
+    <!-- This script segment displays an image from the array -->
+    <script type="text/javascript">getRandomImage(random_images_array, 'images2/')</script>
+</div>
+
+<!-- or to have image linked: -->
+<!--<a href="."><script type="text/javascript">getRandomImage(random_images_array)</script></a>-->
+<h1><a href="">Reload current page | 手机上点此刷新页面</a></h1></center>
+<p></p>
+<p></p>
+<p><a href="index.html">回首页/Back to homepage</p>
+</body>
+</html>

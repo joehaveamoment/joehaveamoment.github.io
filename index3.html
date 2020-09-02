@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>刷新复习五十音图byJoe首页 | Reload page to review Gojūon by Joe</title>
+<style type="text/css">
+body { font: 14px/1.3 verdana, arial, helvetica, sans-serif; }
+h1 { font-size:1.3em; }
+h2 { font-size:1.2em; }
+a:link { color:#33c; }
+a:visited { color:#339; }
+p { max-width: 60em; }
+
+/* so linked image won't have border */
+a img { border:none; }
+</style><center>
+<script type="text/javascript">
+// place your images in this array
+var random_images_array = ['a.png', 'i.png', 'u.png', 'e.png', 'o.png', 'ka.png', 'ki.png', 'ku.png', 'ke.png', 'ko.png', 'sa.png', 'shi.png', 'su.png', 'se.png', 'so.png', 'ta.png', 'chi.png', 'tsu.png', 'te.png', 'to.png', 'na.png', 'ni.png', 'nu.png', 'ne.png', 'no.png', 'ha.png', 'hi.png', 'fu.png', 'he.png', 'ho.png', 'ma.png', 'mi.png', 'mu.png', 'me.png', 'mo.png', 'ya.png', 'yu.png', 'yo.png', 'ra.png', 'ri.png', 'ru.png', 're.png', 'ro.png', 'wa.png', 'wo.png', 'n.png', 'ga.png', 'gi.png', 'gu.png', 'ge.png', 'go.png', 'za.png', 'ji.png', 'zu.png', 'ze.png', 'zo.png', 'da.png', 'ji2.png', 'zu.png', 'de.png', 'do.png', 'ba.png', 'bi.png', 'bu.png', 'be.png', 'bo.png', 'pa.png', 'pi.png', 'pu.png', 'pe.png', 'po.png', 'kya.png', 'kyu.png', 'kyo.png', 'sha.png', 'shu.png', 'sho.png', 'cha.png', 'chu.png', 'cho.png', 'nya.png', 'nyu.png', 'nyo.png', 'hya.png', 'hyu.png', 'hyo.png', 'mya.png', 'myu.png', 'myo.png', 'rya.png', 'ryu.png', 'ryo.png', 'gya.png', 'gyu.png', 'gyo.png', 'ja.png', 'ju.png', 'jo.png', 'bya.png', 'byu.png', 'byo.png', 'pya.png', 'pyu.png', 'pyo.png', 'a1.png', 'i1.png', 'u1.png', 'e1.png', 'o1.png', 'ka1.png', 'ki1.png', 'ku1.png', 'ke1.png', 'ko1.png', 'sa1.png', 'shi1.png', 'su1.png', 'se1.png', 'so1.png', 'ta1.png', 'chi1.png', 'tsu1.png', 'te1.png', 'to1.png', 'na1.png', 'ni1.png', 'nu1.png', 'ne1.png', 'no1.png', 'ha1.png', 'hi1.png', 'fu1.png', 'he1.png', 'ho1.png', 'ma1.png', 'mi1.png', 'mu1.png', 'me1.png', 'mo1.png', 'ya1.png', 'yu1.png', 'yo1.png', 'ra1.png', 'ri1.png', 'ru1.png', 're1.png', 'ro1.png', 'wa1.png', 'wo1.png', 'n1.png', 'ga1.png', 'gi1.png', 'gu1.png', 'ge1.png', 'go1.png', 'za1.png', 'ji1.png', 'zu1.png', 'ze1.png', 'zo1.png', 'da1.png', 'ji21.png', 'zu1.png', 'de1.png', 'do1.png', 'ba1.png', 'bi1.png', 'bu1.png', 'be1.png', 'bo1.png', 'pa1.png', 'pi1.png', 'pu1.png', 'pe1.png', 'po1.png', 'kya1.png', 'kyu1.png', 'kyo1.png', 'sha1.png', 'shu1.png', 'sho1.png', 'cha1.png', 'chu1.png', 'cho1.png', 'nya1.png', 'nyu1.png', 'nyo1.png', 'hya1.png', 'hyu1.png', 'hyo1.png', 'mya1.png', 'myu1.png', 'myo1.png', 'rya1.png', 'ryu1.png', 'ryo1.png', 'gya1.png', 'gyu1.png', 'gyo1.png', 'ja1.png', 'ju1.png', 'jo1.png', 'bya1.png', 'byu1.png', 'byo1.png', 'pya1.png', 'pyu1.png', 'pyo1.png'];
+
+function getRandomImage(imgAr, path) {
+    path = path || 'images/' // default path here
+    var num = Math.floor( Math.random() * imgAr.length );
+    var img = imgAr[ num ];
+    var imgStr = '<img src="' + path + img + '" alt = "">';
+    document.write(imgStr); document.close();
+}
+
+</script>
+</head>
+<body>
+<div>
+    <!-- This script segment displays an image from the array -->
+    <script type="text/javascript">getRandomImage(random_images_array, 'images/')</script>
+</div>
+
+<!-- or to have image linked: -->
+<!--<a href="."><script type="text/javascript">getRandomImage(random_images_array)</script></a>-->
+<h1><a href="">Reload current page | 手机上点此刷新页面</a></h1></center>
+<p></p>
+<p></p>
+<p><a href="index.html">回首页/Back to homepage</p>
+</body>
+</html>
