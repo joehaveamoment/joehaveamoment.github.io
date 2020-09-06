@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="refresh" content="3">
+<title>刷新复习五十音图byJoe | Reload page to review Gojūon by Joe</title>
+<style type="text/css">
+body { font: 14px/1.3 verdana, arial, helvetica, sans-serif; }
+h1 { font-size:1.3em; }
+h2 { font-size:1.2em; }
+a:link { color:#33c; }
+a:visited { color:#339; }
+p { max-width: 60em; }
+
+/* so linked image won't have border */
+a img { border:none; }
+</style><center>
+<script type="text/javascript">
+// place your images in this array
+var random_images_array = ['a.png', 'i.png', 'u.png', 'e.png', 'o.png', 'ka.png', 'ki.png', 'ku.png', 'ke.png', 'ko.png', 'sa.png', 'shi.png', 'su.png', 'se.png', 'so.png', 'ta.png', 'chi.png', 'tsu.png', 'te.png', 'to.png', 'na.png', 'ni.png', 'nu.png', 'ne.png', 'no.png', 'ha.png', 'hi.png', 'fu.png', 'he.png', 'ho.png', 'ma.png', 'mi.png', 'mu.png', 'me.png', 'mo.png', 'ya.png', 'yu.png', 'yo.png', 'ra.png', 'ri.png', 'ru.png', 're.png', 'ro.png', 'wa.png', 'wo.png', 'n.png'];
+
+function getRandomImage(imgAr, path) {
+    path = path || 'images/'; // default path here
+    var num = Math.floor( Math.random() * imgAr.length );
+    var img = imgAr[ num ];
+    var imgStr = '<img src="' + path + img + '" alt = "">';
+    document.write(imgStr); document.close();
+}
+
+</script>
+</head>
+<body>
+<div>
+    <!-- This script segment displays an image from the array -->
+    <script type="text/javascript">getRandomImage(random_images_array, 'images/')</script>
+</div>
+
+<!-- or to have image linked: -->
+<!--<a href="."><script type="text/javascript">getRandomImage(random_images_array)</script></a>-->
+<p></p>
+<p></p>
+<p><a href="index.html">回首页/Back to homepage</p>
+</body>
+</html>
